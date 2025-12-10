@@ -90,7 +90,7 @@ for i=0, n_elements(site_code)-1 do begin
     ;relpathnames = file_dailynames(file_format=pathformat)
     ; 
     if (site eq site_code[i]) then begin
-      file_format = 'susanoo/data/cdf/earth/YYYY/MM/susanoo_sw_'+site_code[i]+'_'+fres+'_YYYYMMDD_v01.01.cdf'
+      file_format = 'susanoo/data/cdf/' +site_code[i]+ '/YYYY/MM/susanoo_sw_'+site_code[i]+'_'+fres+'_YYYYMMDD_v01.01.cdf'
       relpathnames=file_dailynames(file_format=file_format,trange=trange)
       print,site
 
